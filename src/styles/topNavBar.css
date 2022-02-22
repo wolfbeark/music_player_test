@@ -1,0 +1,17 @@
+.m_TopNavBar {
+  background-color: black;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(var(--vw, 1vw) * 100);
+  max-width: 100%;
+  height: 5%;
+  overflow-y: hidden;
+  padding: 0 5%;
+  font-weight: 800;
+  font-size: 1.2em;
+}
+.m_TopNavBar span {
+  display: block;
+}

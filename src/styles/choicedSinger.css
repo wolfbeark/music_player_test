@@ -1,0 +1,21 @@
+.m_choicedSinger {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(var(--vw, 1vw) * 100);
+  height: calc(var(--vh, 1vh) * 40);
+  background-color: aquamarine;
+  padding: 0 3%;
+}
+.m_singerImg {
+  width: calc(var(--vw, 1vw) * 35);
+  --msinger-vw: calc(var(--vw, 1vw) * 35);
+  height: var(--msinger-vw);
+  background-color: green;
+}
+.m_singerIntro {
+  width: calc(var(--vw, 1vw) * 55);
+  height: 90%;
+  background-color: teal;
+}
