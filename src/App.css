@@ -25,7 +25,7 @@ body {
   height: 100vh;
   height: var(--app-height);
   display: flex;
-  font-size: 10px;
+  font-size: 1px;
 }
 
 .App {
