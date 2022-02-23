@@ -1,6 +1,7 @@
 @import "./styles/reset.css";
 @import "./styles/topNavBar.css";
 @import "./styles/choicedSinger.css";
+@import "./styles/choicedSong.css";
 
 :root {
   --vh: 100%;
@@ -12,6 +13,7 @@
   box-sizing: border-box;
   overflow: hidden;
   touch-action: none;
+  image-rendering: -webkit-optimize-contrast;
 }
 html,
 body {

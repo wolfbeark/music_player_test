@@ -1,20 +1,112 @@
 .m_choicedSinger {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+  background-color: aquamarine;
+}
+.m_singerImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 45%;
+  background-color: white;
+}
+.m_singerIntro {
+  display: flex;
+  width: 100%;
+  height: 55%;
+  background-color: white;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.m_singerImg img {
+  border-radius: 50%;
+  width: 40%;
+  height: 80%;
+  object-fit: cover;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  border: none;
+}
+.m_singerIntro .singerName {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.m_singerIntro .singerName > span {
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 1.1rem;
+  font-weight: 900;
+  text-shadow: black 5px 0 10px;
+  color: white;
+}
+.m_singerIntro .singerLikeCount {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 40%;
-  background-color: aquamarine;
-  padding: 0 3%;
+  height: 15%;
 }
-.m_singerImg {
-  width: 35%;
-  height: 75%;
-  background-color: green;
+.m_singerIntro .singerLikeCount span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  height: 100%;
+  font-size: 3rem;
+  font-weight: 800;
 }
-.m_singerIntro {
-  width: 55%;
-  height: 90%;
-  background-color: teal;
+.m_singerIntro .singerLikeCount span:first-child {
+  color: white;
+  background-color: black;
+  width: 50%;
+}
+.m_singerIntro .singerLikeCount span:last-child {
+  color: red;
+  background-color: black;
+  width: 50%;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 10rem;
+}
+.m_singerIntro .singerGenre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60%;
+  background-color: blue;
+}
+.m_singerGenre_list {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+.m_singerGenre_item {
+  width: 80%;
+  height: 80%;
+  background-color: black;
+  color: white;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 4rem;
+  box-shadow: 0px 0px 20px white;
 }

@@ -5,10 +5,11 @@ import { singerArr } from './SingerData';
 
 import TopNavBar from './components/TopNavBar';
 import ChoicedSinger from './components/ChoicedSinger';
+import ChoicedSong from './components/ChoicedSong';
 function App() {
 
   let [data, setData] = useState(singerArr);
-  let [modalClick, setModalClick] = useState(false);
+  let [isMusicClick, setmusicClick] = useState(false);
   let [num, setNum] = useState(0);
   // function setScreenSize() {
   //   let vh = window.innerHeight * 0.01;
@@ -30,19 +31,25 @@ function App() {
   return (
     <div className={isMobile ? 'm_App' : 'App'}>
       {isMobile //모바일
-      ? modalClick //모바일, 모달 
+      ? isMusicClick //모바일, 모달 
         ? null 
         : 
         <div className='mContainer'>
           <TopNavBar isMobile={isMobile} />
           <ChoicedSinger 
-          isMobile={isMobile} 
-          data={data}
-          num={num}
+            isMobile={isMobile} 
+            data={data}
+            num={num}
           />
+          <ChoicedSong
+            isMobile={isMobile}
+            data={data}
+            num={num}  
+          >
+          </ChoicedSong>
         </div>
         
-      : (modalClick ? null : <div></div>) //pc
+      : (isMusicClick ? null : <div></div>) //pc
       }
     </div>
   );
