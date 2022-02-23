@@ -11,10 +11,13 @@
   overflow: hidden;
   touch-action: none;
 }
+html {
+  height: -webkit-fill-available;
+}
 body {
   width: calc(var(--vw, 1vw) * 100);
   min-height: 100vh;
-  min-height: calc(var(--vh) * 100);
+  min-height: -webkit-fiall-available;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
