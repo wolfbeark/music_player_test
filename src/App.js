@@ -10,15 +10,22 @@ function App() {
   let [data, setData] = useState(singerArr);
   let [modalClick, setModalClick] = useState(false);
   let [num, setNum] = useState(0);
-  function setScreenSize() {
-    let vh = window.innerHeight * 0.01;
-    let vw = window.innerWidth * 0.01;
-    document.documentElement.style.setProperty("--vh", `${vh}px`);
-    document.documentElement.style.setProperty("--vw", `${vw}px`);
+  // function setScreenSize() {
+  //   let vh = window.innerHeight * 0.01;
+  //   let vw = window.innerWidth * 0.01;
+  //   document.documentElement.style.setProperty("--vh", `${vh}px`);
+  //   document.documentElement.style.setProperty("--vw", `${vw}px`);
+  // }
+  const appHeight = () => {
+    const doc = document.documentElement
+    doc.style.setProperty('--app-height', `${window.innerHeight}px`)
   }
-  useEffect(() => {
-    setScreenSize();
-  });
+  window.addEventListener('resize', appHeight)
+  appHeight()
+  console.log(window.innerHeight);
+  // useEffect(() => {
+  //   setScreenSize();
+  // });
   console.log(isMobile);
   return (
     <div className={isMobile ? 'm_App' : 'App'}>
