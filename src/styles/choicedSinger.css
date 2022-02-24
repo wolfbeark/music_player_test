@@ -71,14 +71,14 @@
   align-items: center;
   height: inherit;
   height: 100%;
-  font-size: 40px;
+  font-size: 10px;
   font-weight: 800;
 }
 .m_singerIntro .singerLikeCount span:first-child {
   color: white;
   background-color: black;
   width: 50%;
-  letter-spacing: 5rem;
+  letter-spacing: 5px;
 }
 .m_singerIntro .singerLikeCount span:last-child {
   color: red;
@@ -86,8 +86,8 @@
   width: 50%;
   justify-content: center;
   align-items: center;
-  padding-left: 20rem;
-  letter-spacing: 5rem;
+  padding-left: 20px;
+  letter-spacing: 5px;
 }
 .m_singerIntro .singerGenre {
   display: flex;
@@ -117,7 +117,7 @@
   justify-content: center;
   align-items: center;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 20px;
   box-shadow: 0px 0px 20px white;
   letter-spacing: 3px;
 }

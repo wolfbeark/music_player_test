@@ -41,7 +41,7 @@ body {
   width: 100vw;
   height: 150vh;
   background-color: blue;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .m_App {
@@ -49,7 +49,7 @@ body {
   background-color: whitesmoke;
   width: 100vw;
   height: calc(var(--app-height) * 1.5);
-  overflow: hidden;
+  overflow-x: hidden;
   touch-action: none;
 }
 .mContainer {
@@ -61,7 +61,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  overflow: hidden;
+  overflow-x: hidden;
   touch-action: none;
 }
 /* .MobileBox {

@@ -26,7 +26,7 @@
 .m_choicedSong .choicedSong_item img {
   width: 20%;
   height: 70%;
-  border-radius: 30px;
+  border-radius: 20px;
   margin-left: 5%;
 }
 .m_choicedSong .choicedSong_desc {
@@ -44,16 +44,16 @@
   width: 100%;
   height: 60%;
   font-weight: 800;
-  font-size: 50px;
-  letter-spacing: 2px;
-  text-shadow: grey 5px 0px;
+  font-size: 40px;
+  letter-spacing: 50px;
+  text-shadow: rgba(0, 0, 0, 0.3) 1px 0px;
 }
 .m_choicedSong .choicedSong_desc span:last-child {
   width: 100%;
   height: 40%;
   font-weight: 800;
-  font-size: 40px;
+  font-size: 30px;
   align-items: flex-start;
   color: rgba(0, 0, 0, 0.6);
-  letter-spacing: 8px;
+  letter-spacing: 3px;
 }
