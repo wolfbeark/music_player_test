@@ -49,11 +49,11 @@
   align-items: center;
 }
 .m_singerIntro .singerName > span {
-  font-size: 200rem;
+  font-size: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  letter-spacing: 5rem;
+  letter-spacing: 2px;
   font-weight: 900;
   text-shadow: black 5px 0 10px;
   color: white;
@@ -71,7 +71,7 @@
   align-items: center;
   height: inherit;
   height: 100%;
-  font-size: 50rem;
+  font-size: 40px;
   font-weight: 800;
 }
 .m_singerIntro .singerLikeCount span:first-child {
@@ -117,7 +117,7 @@
   justify-content: center;
   align-items: center;
   font-weight: 700;
-  font-size: 50rem;
+  font-size: 40px;
   box-shadow: 0px 0px 20px white;
-  letter-spacing: 5rem;
+  letter-spacing: 3px;
 }
