@@ -12,7 +12,7 @@ function ChoicedSong({isMobile, data, num}){
                     >
                         <img alt="/"src={a.songImg}
                             style={{
-                                boxShadow: `0px 0px 20px 10px ${a.songImgShadow}`
+                                boxShadow: `0px 0px 30rem 10rem ${a.songImgShadow}`
                             }} />
                         <div className="choicedSong_desc">
                             <span>{a.songName}</span>

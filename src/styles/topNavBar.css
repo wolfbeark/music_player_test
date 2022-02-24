@@ -11,7 +11,8 @@
   overflow-y: hidden;
   padding: 0 5%;
   font-weight: 800;
-  font-size: 3rem;
+  font-size: 50rem;
+  letter-spacing: 1.1rem;
 }
 .m_TopNavBar span {
   display: block;

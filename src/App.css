@@ -2,30 +2,39 @@
 @import "./styles/topNavBar.css";
 @import "./styles/choicedSinger.css";
 @import "./styles/choicedSong.css";
-
+@font-face {
+  font-family: "BebasNeue";
+  src: url("./font/BebasNeue-Regular.ttf");
+}
 :root {
   --vh: 100%;
   --vw: 100%;
   --app-height: 100%;
+  --cus-font: "BebasNeue";
+  --app-height-one: 100%;
 }
 
 * {
   box-sizing: border-box;
-  overflow: hidden;
   touch-action: none;
   image-rendering: -webkit-optimize-contrast;
   text-size-adjust: none;
+  font-family: var(--cus-font);
+}
+span {
+  font-family: var(--cus-font);
 }
 html,
 body {
   padding: 0;
   margin: 0;
-  overflow: hidden;
+  overflow-x: hidden;
   width: 100vw;
   height: 100vh;
-  height: var(--app-height);
+  height: calc(var(--app-height) * 1.5);
   display: flex;
   font-size: 1px;
+  background-color: yellowgreen;
 }
 
 .App {
@@ -39,7 +48,7 @@ body {
   display: flex;
   background-color: whitesmoke;
   width: 100vw;
-  height: var(--app-height);
+  height: calc(var(--app-height) * 1.5);
   overflow: hidden;
   touch-action: none;
 }
