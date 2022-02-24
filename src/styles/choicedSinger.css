@@ -34,7 +34,7 @@
 }
 .m_singerImg img {
   border-radius: 50%;
-  width: 60%;
+  width: 40%;
   height: 80%;
   object-fit: cover;
   transform: translateZ(0);
@@ -49,7 +49,7 @@
   align-items: center;
 }
 .m_singerIntro .singerName > span {
-  font-size: 50px;
+  font-size: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,7 +71,7 @@
   align-items: center;
   height: inherit;
   height: 100%;
-  font-size: 20px;
+  font-size: 10px;
   font-weight: 800;
 }
 .m_singerIntro .singerLikeCount span:first-child {
