@@ -2,6 +2,7 @@
 @import "./styles/topNavBar.css";
 @import "./styles/choicedSinger.css";
 @import "./styles/choicedSong.css";
+@import "./styles/currentSong.css";
 @font-face {
   font-family: "BebasNeue";
   src: url("./font/BebasNeue-Regular.ttf");
@@ -10,6 +11,7 @@
   --vh: 100%;
   --vw: 100%;
   --app-height: 150%;
+  --app-height-cur: 100%
   --cus-font: "BebasNeue";
 }
 
@@ -33,14 +35,20 @@ body {
   height: var(--app-height);
   display: flex;
   font-size: 1px;
-  background-color: yellowgreen;
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+}
+:visited {
+  text-decoration: none;
+  color: inherit;
 }
 
 .App {
   width: 100vw;
   height: 150vh;
   background-color: blue;
-  overflow-x: hidden;
 }
 
 .m_App {
@@ -48,7 +56,6 @@ body {
   background-color: whitesmoke;
   width: 100vw;
   height: var(--app-height);
-  overflow-x: hidden;
 }
 .mContainer {
   width: 100%;
@@ -59,10 +66,5 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  overflow-x: hidden;
 }
-/* .MobileBox {
-  width: 100%;
-  height: calc(var(--vh, 1vh) * 100);
-  overflow-y: hidden;
-} */
+

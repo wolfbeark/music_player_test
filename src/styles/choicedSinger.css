@@ -20,7 +20,15 @@
 .m_singerImg .nextSinger {
   width: 15%;
   height: 45%;
-  background-color: cornflowerblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.m_singerImg .preSingerBtn,
+.m_singerImg .nextSingerBtn {
+  width: 50%;
+  height: 50%;
+  background-color: white;
 }
 
 .m_singerIntro {
@@ -71,7 +79,7 @@
   align-items: center;
   height: inherit;
   height: 100%;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 800;
 }
 .m_singerIntro .singerLikeCount span:first-child {

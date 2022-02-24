@@ -1,7 +1,9 @@
 
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleArrowLeft, faCircleArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-function ChoicedSinger({data, num, isMobile}){
+function ChoicedSinger({data, num, isMobile, setNum}){
     
     function SingerGenre({data, num, isMobile}){
         return(
@@ -19,22 +21,53 @@ function ChoicedSinger({data, num, isMobile}){
             </div>
         );
     }
+    function increaseNum(){
+        let _num = num;
+        if(_num != 3){
+             _num++;
+             setNum(_num);
+        }
+    }
+    function decreaseNum(){
+        let _num = num;
+        if(_num != 0){
+             _num--;
+             setNum(_num);
+        }
+    }
     
     return(
         <div className={isMobile ? 'm_choicedSinger' : 'choicedSinger'}>
             <div className={isMobile ? 'm_singerImg' : 'singerImg'}>
-                <div className="preSinger">
-
+                <div className="preSinger"
+                    style={num === 0 
+                        ? {visibility: 'hidden'}
+                        : {visibility: 'visible'}}    
+                >
+                    <FontAwesomeIcon 
+                        icon={faCircleArrowLeft} 
+                        className='preSingerBtn'
+                        onClick={decreaseNum} 
+                    />
                 </div>
                 <img 
                     alt="/" 
                     src={data[num].singerImg}
                     style={{
-                        boxShadow: `0px 0px 30px 10px ${data[num].imgShadow}`
+                        boxShadow: `0px 0px 30px 10px ${data[num].imgShadow}`,
+                        
                     }}  
                 />
-                <div className="nextSinger">
-
+                <div className="nextSinger"
+                    style={num === 3 
+                        ? {visibility: 'hidden'}
+                        : {visibility: 'visible'}}
+                    >
+                    <FontAwesomeIcon 
+                        icon={faCircleArrowRight} 
+                        className='nextSingerBtn'
+                        onClick={increaseNum}
+                        />
                 </div>
             </div>
             <div className={isMobile ? 'm_singerIntro' : 'singerIntro'}>
