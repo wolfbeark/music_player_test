@@ -26,7 +26,7 @@
 .m_choicedSong .choicedSong_item img {
   width: 20%;
   height: 70%;
-  border-radius: 20px;
+  border-radius: 15px;
   margin-left: 5%;
 }
 .m_choicedSong .choicedSong_desc {

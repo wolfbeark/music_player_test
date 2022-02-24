@@ -9,9 +9,8 @@
 :root {
   --vh: 100%;
   --vw: 100%;
-  --app-height: 100%;
+  --app-height: 150%;
   --cus-font: "BebasNeue";
-  --app-height-one: 100%;
 }
 
 * {
@@ -31,7 +30,7 @@ body {
   overflow-x: hidden;
   width: 100vw;
   height: 100vh;
-  height: calc(var(--app-height) * 1.5);
+  height: var(--app-height);
   display: flex;
   font-size: 1px;
   background-color: yellowgreen;
@@ -48,13 +47,12 @@ body {
   display: flex;
   background-color: whitesmoke;
   width: 100vw;
-  height: calc(var(--app-height) * 1.5);
+  height: var(--app-height);
   overflow-x: hidden;
-  touch-action: none;
 }
 .mContainer {
   width: 100%;
-  height: calc(var(--app-height) * 1.5);
+  height: var(--app-height);
   min-height: 100%;
   background-color: red;
   display: flex;
@@ -62,7 +60,6 @@ body {
   align-items: center;
   justify-content: flex-start;
   overflow-x: hidden;
-  touch-action: none;
 }
 /* .MobileBox {
   width: 100%;

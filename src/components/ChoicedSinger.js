@@ -30,7 +30,7 @@ function ChoicedSinger({data, num, isMobile}){
                     alt="/" 
                     src={data[num].singerImg}
                     style={{
-                        boxShadow: `0px 0px 80rem 30rem ${data[num].imgShadow}`
+                        boxShadow: `0px 0px 30px 10px ${data[num].imgShadow}`
                     }}  
                 />
                 <div className="nextSinger">
