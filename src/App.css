@@ -38,9 +38,14 @@ body {
   overflow: hidden;
 }
 a {
-  text-decoration: none;
+  text-align: center;
+  text-decoration: none; /* 링크의 밑줄 제거 */
+  color: inherit
 }
-:visited {
+a:link,
+a:hover,
+a:visited,
+a:active{
   text-decoration: none;
   color: inherit;
 }
