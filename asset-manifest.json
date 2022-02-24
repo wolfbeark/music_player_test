@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/music_player_test/static/css/main.bc2eff7e.css",
+    "main.css": "/music_player_test/static/css/main.3a733377.css",
     "main.js": "/music_player_test/static/js/main.e9f65bd0.js",
     "static/js/787.cdaa0d1a.chunk.js": "/music_player_test/static/js/787.cdaa0d1a.chunk.js",
     "static/media/BebasNeue-Regular.ttf": "/music_player_test/static/media/BebasNeue-Regular.12e3683f9192436a7be8.ttf",
     "index.html": "/music_player_test/index.html",
-    "main.bc2eff7e.css.map": "/music_player_test/static/css/main.bc2eff7e.css.map",
+    "main.3a733377.css.map": "/music_player_test/static/css/main.3a733377.css.map",
     "main.e9f65bd0.js.map": "/music_player_test/static/js/main.e9f65bd0.js.map",
     "787.cdaa0d1a.chunk.js.map": "/music_player_test/static/js/787.cdaa0d1a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bc2eff7e.css",
+    "static/css/main.3a733377.css",
     "static/js/main.e9f65bd0.js"
   ]
 }
