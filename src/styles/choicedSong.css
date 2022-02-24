@@ -45,7 +45,7 @@
   height: 60%;
   font-weight: 800;
   font-size: 40px;
-  letter-spacing: 50px;
+  letter-spacing: 3px;
   text-shadow: rgba(0, 0, 0, 0.3) 1px 0px;
 }
 .m_choicedSong .choicedSong_desc span:last-child {
