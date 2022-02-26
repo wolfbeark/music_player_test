@@ -121,7 +121,7 @@ const singer_3 = {
 }
 
 const singer_4 = {
-    singerImg : 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Adele_for_Vogue_in_2021.png/330px-Adele_for_Vogue_in_2021.png',
+    singerImg : 'http://static3.bornrichimages.com/cdn2/500/500/91/c/wp-content/uploads/s3/1/2012/04/13/1334315722_300x300.jpg',
     singerName : 'Adele',
     likeCount : '389,854',
     genre : ['POP', 'SOUL'],
