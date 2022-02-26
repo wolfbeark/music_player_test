@@ -108,10 +108,10 @@
 }
 .rhap_progress-bar .rhap_progress-indicator {
   background-color: white;
-  width: 0.1px;
-  height: 5px;
+  width: 0.01px;
+  height: 3px;
   margin-left: 0px;
-  top: -1px;
+  top: 1px;
 }
 .rhap_progress-bar .rhap_progress-filled {
   background-color: white;
