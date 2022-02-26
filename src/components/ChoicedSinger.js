@@ -23,14 +23,14 @@ function ChoicedSinger({data, num, isMobile, setNum}){
     }
     function increaseNum(){
         let _num = num;
-        if(_num != 3){
+        if(_num !== 3){
              _num++;
              setNum(_num);
         }
     }
     function decreaseNum(){
         let _num = num;
-        if(_num != 0){
+        if(_num !== 0){
              _num--;
              setNum(_num);
         }

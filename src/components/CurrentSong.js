@@ -2,6 +2,8 @@
 import React from "react";
 import AudioPlayer from 'react-h5-audio-player';
 import 'react-h5-audio-player/lib/styles.css';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 
 function CurrentSong({isMobile, num, data, curMusicNum, returnPage}){
@@ -9,7 +11,11 @@ function CurrentSong({isMobile, num, data, curMusicNum, returnPage}){
     function CurSongTop({isMobile}){
         return(
             <div className={isMobile ? 'm_curSongTop' : 'curSongTop'}>
-                <button onClick={returnPage}>Back</button>
+                <FontAwesomeIcon 
+                        icon={faCircleArrowLeft} 
+                        className='returnPageBtn'
+                        onClick={returnPage} 
+                    />
             </div>
         );
     }
@@ -30,6 +36,7 @@ function CurrentSong({isMobile, num, data, curMusicNum, returnPage}){
             <div className="curSongPlayer">
                 <div className="curSongPlayerBox">
                     <AudioPlayer className="player"
+                        layout="stacked"
                         autoPlay
                         volume='0.5'
                         src={process.env.PUBLIC_URL + data[num].songArr[curMusicNum].song}>

@@ -48,6 +48,9 @@
   transform: translateZ(0);
   backface-visibility: hidden;
   border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .m_singerIntro .singerName {
   width: 100%;
@@ -86,13 +89,17 @@
   color: white;
   background-color: black;
   width: 50%;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 15px;
+  align-items: center;
 }
 .m_singerIntro .singerLikeCount span:last-child {
   color: red;
   background-color: black;
   width: 50%;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding-left: 15px;
   letter-spacing: 3px;

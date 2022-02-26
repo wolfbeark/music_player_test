@@ -9,19 +9,28 @@
   justify-content: flex-start;
 }
 .m_curSongTop {
-  background-color: yellow;
+  background-color: black;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   width: 100%;
   max-width: 100%;
   height: 5%;
   min-height: 5%;
   overflow-y: hidden;
-  padding: 0 5%;
   font-weight: 800;
   font-size: 20px;
   letter-spacing: 1.1px;
+  padding-left: 2%;
+}
+.mContainer_curSong .returnPageBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  width: 10%;
+  height: 90%;
+  color: white;
 }
 
 .mContainer_curSong .curSongInfo {
@@ -31,7 +40,7 @@
   justify-content: space-between;
   width: 100%;
   height: 65%;
-  background-color: white;
+  background-color: black;
   padding: 10%;
 }
 .mContainer_curSong .curSongInfo img {
@@ -52,17 +61,18 @@
   letter-spacing: 5px;
   text-shadow: rgba(0, 0, 0, 0.3) 2px 0px;
   height: 35%;
+  color: white;
 }
 .mContainer_curSong .curSongInfo span:last-child {
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: 800;
-  font-size: 12px;
+  font-size: 15px;
   width: 100%;
   letter-spacing: 1px;
   height: 15%;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(255, 255, 255, 0.6);
 }
 .mContainer_curSong .curSongPlayer {
   width: 100%;
@@ -73,7 +83,7 @@
 }
 .mContainer_curSong .curSongPlayerBox {
   width: 100%;
-  height: 50%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,4 +92,36 @@
 .mContainer_curSong .player {
   width: 100%;
   height: 100%;
+  background-color: black;
+}
+.rhap_container {
+  padding: 0px;
+}
+.rhap_main {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+}
+.rhap_progress-section .rhap_current-time {
+  color: white;
+}
+.rhap_progress-bar .rhap_progress-indicator {
+  background-color: white;
+  width: 0.1px;
+  height: 5px;
+  margin-left: 0px;
+  top: -1px;
+}
+.rhap_progress-bar .rhap_progress-filled {
+  background-color: white;
+}
+.rhap_progress-section .rhap_total-time {
+  color: white;
+}
+.rhap_progress-bar .rhap_download-progress {
+  visibility: hidden;
+}
+.rhap_additional-controls {
+  visibility: hidden;
+  display: block;
 }

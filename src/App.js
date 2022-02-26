@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { isMobile } from 'react-device-detect';
 import { singerArr } from './SingerData';
 import { Route, useHistory } from 'react-router-dom';
